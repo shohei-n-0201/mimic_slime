@@ -8,7 +8,7 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <!-- AR.js を読み込む -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <title>IMD M1 Workshop RyosukeShigeto</title>
+    <title>IMD M1 Workshop Shohei Noguchi</title>
   </head>
   <body style="margin: 0; overflow: hidden">
 	  
@@ -17,14 +17,14 @@
 	    
       <!-- 3DCGモデルを読み込む -->
       <a-assets>
-        <a-asset-item id="daruma" src="https://github.com/shohei-n-0201.github.io/mimic_slime/webar/assets/mimic_slime.glb"></a-asset-item>
+        <a-asset-item id="mimic_slime" src="https://github.com/shohei-n-0201.github.io/mimic_slime/webar/assets/mimic_slime.glb"></a-asset-item>
 	      
       </a-assets>
 
       <!-- マーカーの.pattファイルを読み込む -->
       <a-marker type="pattern" url="https://github.com/shohei-n-0201.github.io/mimic_slime/webar/assets/pattern-marker_2.patt">
         <!-- 3Dモデルを呼び出す -->
-        <a-entity gltf-model="#daruma" 
+        <a-entity gltf-model="#mimic_slime" 
 		animation__rotation="property: rotation; to: 0 0 360; loop: true; dur: 5000; dir: alternate; easing: easeInOutSine"
 		animation__position="property: position; to: 0 1 0; loop: true; dur: 2500; dir: alternate; easing: easeInOutSine">
 	</a-entity>
