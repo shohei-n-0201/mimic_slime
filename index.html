@@ -24,7 +24,7 @@
       <a-marker type="pattern" url="./assets/pattern-marker_2.patt">
         <!-- 3Dモデルを呼び出す -->
         <a-entity gltf-model="#mimic_slime" 
-		gltf-model.setAttribute("radius", "0.75");
+		animation__rotation="property: rotation; to: 0 180 180; loop: false; dur: 5000; dir: alternate; easing: easeInOutSine"
 		animation__rotation="property: rotation; to: 0 360 0; loop: true; dur: 5000; dir: alternate; easing: easeInOutSine"
 		animation__position="property: position; to: 0 1 0; loop: true; dur: 2500; dir: alternate; easing: easeInOutSine">
 	</a-entity>
